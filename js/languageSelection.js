@@ -1,3 +1,3 @@
 function languageSelection() {
-    window.location.href = "languageSelection.html";
+    window.location.href = "loginQuestion.html";
     }

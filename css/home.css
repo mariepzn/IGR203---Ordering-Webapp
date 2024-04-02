@@ -9,6 +9,7 @@ h1 {
 
 
 .button {
+    border-radius: 8px;
     background-color: #009246;
     border: none;
     color: white;

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+
+header #homeButton, header #cartButton, .btn {
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-info {
+    background-color: #3498db; /* Bleu */
+}
+
+.btn-add {
+    background-color: #2ecc71; /* Vert */
+}
+
+header #searchBar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav #categories {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+nav #categories li {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+main .category {
+    padding: 10px;
+}
+
+main .dish {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .dish-img {
+    max-width: 100px; /* Ajustez selon la taille désirée */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+main .dish-info {
+    display: flex;
+    align-items: center;
+}
+
+main .dish-info p {
+    margin: 0 10px;
+}

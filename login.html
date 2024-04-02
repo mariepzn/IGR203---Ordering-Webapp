@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connexion - Saladd</title>
+        <link href="css/home.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text_align">
+          <img src="media/LogoSaladd.png" alt="Logo Saladd" width="500">
+        </div>
+
+        <br>
+        
+        <div class="form_container text_align">
+            <form action="menu.html" method="post">
+                <div class="form_group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <br>
+
+                <div class="form_group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <br>
+
+                <button type="submit" class="button button1" onclick="login()">Connexion</button>
+            </form>
+
+            <p><a href="recup.html">Mot de passe oublié ?</a></p>
+            <p>Nouvel utilisateur ? <a href="inscription.html">Créez un compte</a>.</p>
+        </div>
+
+        <script src="js/home.js"></script>
+    </body>
+</html>
