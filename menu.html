@@ -9,7 +9,10 @@
     <header>
         <button id="homeButton">Acceuil</button>
         <input type="search" id="searchBar" placeholder="Rechercher...">
-        <button id="cartButton">Panier</button>
+        <button id="panierButton" onclick="window.location.href='panier.html';">Panier</button>
+        <button id="clear-cart">Vider le panier</button>
+
+
     </header>
     
     <nav>
@@ -28,7 +31,7 @@
                     <p>Sex on the Beach</p>
                     <p>8€</p>
                     <button class="btn btn-info">i</button> <p> </p>  <!-- faudra que je trouve un autre separateur lateral que des espaces -->
-                    <button class="btn btn-add">+</button>
+                    <button class="btn btn-add" data-id="1" data-name="Sex on the Beach" data-price="8">+</button> <!--id unique pour chaque item-->
                 </div>
             </div>
 
@@ -39,7 +42,8 @@
                     <p>Spritz</p>
                     <p>7€</p>
                     <button class="btn btn-info">i</button> <p> </p>
-                    <button class="btn btn-add">+</button>
+                    <button class="btn btn-add" data-id="2" data-name="Spritz" data-price="7">+</button>
+
                 </div>
             </div>
             <!-- div pour chaque plat -->
@@ -50,7 +54,8 @@
                     <p>Salade provencale</p>
                     <p>10€</p>
                     <button class="btn btn-info">i</button> <p> </p>
-                    <button class="btn btn-add">+</button>
+                    <button class="btn btn-add" data-id="3" data-name="provencale" data-price="10">+</button>
+
                 </div>
             </div>
 
@@ -60,7 +65,8 @@
                     <p>Salade fraiche</p>
                     <p>7€</p>
                     <button class="btn btn-info">i</button> <p> </p>
-                    <button class="btn btn-add">+</button>
+                    <button class="btn btn-add" data-id="4" data-name="fraiche" data-price="7">+</button>
+
                 </div>
             </div>
 
@@ -76,3 +82,16 @@
 
 </body>
 </html>
+
+
+
+<!--page pop up pour fidelite-->
+
+<div id="overlayPage" class="overlay-page" style="display: none;">
+    <div class="overlay-content">
+        <h2>Vous avez 22 points de fidélité</h2>
+        <p>Souhaitez vous<br>les utiliser ?</p>
+        <button id="goToFidelite" onclick="goToFidelite()">Oui</button>
+        <button id="closeOverlay" onclick="close()">Une autre fois</button>
+    </div>
+</div>

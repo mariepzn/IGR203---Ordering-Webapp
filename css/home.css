@@ -20,3 +20,19 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
   }
+
+
+  @media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    .overlay-content {
+        width: 95%; /* Plus étroit sur un ordinateur */
+        padding: 10px; /* Moins d'espace sur un téléphone */
+    }
+    .close-btn {
+        top: 5px; /* Ajustement pour les petits écrans */
+        right: 5px;
+    }
+    /* Ajoutez d'autres ajustements de style ici */
+}
