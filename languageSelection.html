@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Saladd</title>
-        <link href="css/languageSelection.css" rel="stylesheet">
-    </head>
-
+<head>
+    <title>Saladd</title>
+    <link href="css/languageSelection.css" rel="stylesheet">
+</head>
+<body>
     <h1>Langues</h1>
 
-    <body>
-        <div class="buttonLign">
-            <button class="flag" onclick="languageSelection()"></button>
-            <button class="flag" style="background-image: url('../media/uk.png');" onclick="languageSelection()"></button>
-            <script src="js/languageSelection.js"></script>
-        </div>
-<br>   <!-- il faudra faire une grid ça sera plus simple -->
-        <div class="buttonLign">
-            <button class="flag" style="background-image: url('../media/es.png');" onclick="languageSelection()"></button>
-            <button class="flag" style="background-image: url('../media/de.png');" onclick="languageSelection()"></button>
-            <script src="js/languageSelection.js"></script>
-        </div>
+    <button class="flag" style="background-image: url('media/fr.png');" onclick="setLanguage('fr')"></button>
+    <button class="flag" style="background-image: url('media/uk.png');" onclick="setLanguage('en')"></button>
 
-    </body>
+
+    <script src="js/languageSelection.js"></script>
+</body>
 </html>
