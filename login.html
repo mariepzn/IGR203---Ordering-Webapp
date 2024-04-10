@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Connexion - Saladd</title>
-        <link href="css/home.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
     </head>
     <body>
         <div class="text_align">
@@ -14,26 +14,27 @@
         <div class="form_container text_align">
             <form action="menu.html" method="post">
                 <div class="form_group">
-                    <label for="username">Nom d'utilisateur :</label>
+                    <label for="username" data-translate="username">Username:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
 
                 <br>
 
                 <div class="form_group">
-                    <label for="password">Mot de passe :</label>
+                    <label for="password" data-translate="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
 
                 <br>
 
-                <button type="submit" class="button button1" onclick="login()">Connexion</button>
+                <button type="submit" class="button button1" onclick="login()"><label for="login" data-translate="login">Login</label></button>
             </form>
 
-            <p><a href="recup.html">Mot de passe oublié ?</a></p>
-            <p>Nouvel utilisateur ? <a href="inscription.html">Créez un compte</a>.</p>
+            <p><a href="recup.html"><label for="forgot_password" data-translate="forgot_password">Forgot Password?</label></a></p>
+            <p><label for="new_user" data-translate="new_user"></label> <a href="inscription.html"><label for="create_account" data-translate="create_account"></label></a></p>
         </div>
 
-        <script src="js/home.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/translate.js"></script>
     </body>
 </html>
