@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('searchBar');
     const categories = document.querySelectorAll('#categories li');
@@ -161,6 +162,12 @@ function goToHabitude(){
         window.location.href = "info-provencale.html";}
         function goToInfoF(){
             window.location.href = "info-fraiche.html";}
+            function goToInfoS(){
+                window.location.href = "info-sexOnTheBeach.html";}
+                function goToInfoSp(){
+                    window.location.href = "info-spritz.html";}
+                    function goToInfoT(){
+                        window.location.href = "info-tiramisu.html";}
 
 
 
