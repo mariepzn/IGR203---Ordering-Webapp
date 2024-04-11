@@ -9,7 +9,6 @@ body {
 
 header {
     padding: 10px;
-    background-color: #eee;
     text-align: center;
     display: flex; 
     align-items: center; 
@@ -181,3 +180,4 @@ main .dish-info p {
     font-family: "Saladd", sans-serif;
 
 }
+
