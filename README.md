@@ -33,7 +33,7 @@ Des dossiers css et js regroupent les fichiers en question associés aux pages w
 Un dossier json regroupe les dictionnaires utilisés pour la traduction du site
 Finalement un dossier media regroupe les images utilisées au travers des pages
 
-Comme nous n'avons pas implémenté de database (ce n'étais pas le but de l'exercice), certaines pages ont été dupliquées et hardcoded. Cette structure de code peu élégante pourra être améliorée lors de l'introduction d'une base de donées structurée dans des fichiers Json. Le code devrait être facilement adaptable. 
+Comme nous n'avons pas implémenté de database (ce n'étais pas le but de l'exercice), certaines pages ont été dupliquées et hardcoded. Cette structure de code peu élégante pourra être améliorée lors de l'introduction d'une base de donées structurée dans des fichiers Json. Le code devrait être adaptable. 
 Les données (comme le total ou les plats sélectionnés) sont enregistrées en local mais pourrait à l'aide d'une base de donée être enregistré sur un server. 
 
 ## Cloner le dépot:

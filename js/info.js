@@ -20,7 +20,7 @@ function addToCart(id) {
         addItemToCart(platId, platName, platPrice);
         
     }
-    if (id === 1) {
+    if (id === 2) {
         const platId = "2";
         const platName = "Spritz";
         const platPrice = "7";
