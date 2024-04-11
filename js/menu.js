@@ -112,3 +112,5 @@ function goToHome(){
 function close(){
     window.close();
 }
+function goToHabitude(){
+    window.location.href = "habitude.html";}

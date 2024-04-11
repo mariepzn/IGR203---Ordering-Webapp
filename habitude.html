@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu du Restaurant</title>
+    <link rel="icon" href="media/icon.png">
+    <link rel="stylesheet" href="css/habitude.css">
+</head>
+<body>
+    <header>
+        <div >
+            <img src="media/LogoSaladd.png" alt="logo" width="250"> <br><br><br>
+          </div>
+        <div>
+            <button id="homeButton" class="button3" onclick="goToHome()">Accueil</button>
+            <input type="search" id="searchBar" placeholder="Rechercher...">
+            <button id="panierButton" class= "button3" onclick="window.location.href='panier.html';">Panier</button>
+            <button id="clear-cart" class = "button3">Vider le panier</button>
+        </div>
+
+    </header>
+    
+   
+    
+    <main>
+        <div class="list">
+            <div class="dish">
+                <img src="media/commande/panier.png" class="dish-img">
+                <div class="dish-info">
+                    <div class="commande-info">
+                        <p>Commande du 27/08 </p>
+                        <p>- 1 salade nicoise</p>
+                        <p> - 1 cocktail </p>
+                    </div>
+
+                    <p>25€</p>
+                    <button class="btn btn-info">i</button> <p> </p>  <!-- faudra que je trouve un autre separateur lateral que des espaces -->
+                    <button class="btn btn-add" data-id="1" data-name="Sex on the Beach" data-price="25">+</button> <!--id unique pour chaque item-->
+                </div>
+            </div>
+
+
+            <div class="dish">
+                <img src="media/commande/panier.png" class="dish-img">
+                <div class="dish-info">
+                    <div class="commande-info">
+                        <p>Commande du 13/07 </p>
+                        <p>- 1 salade tomate mozzarella</p>
+                        <p> - 1 jus d'orange pressé </p>
+                        <p> - 1 tarte au pomme (sans pomme) </p>
+                    </div>
+                    <p>27€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="2" data-name="Spritz" data-price="27">+</button>
+
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="media/commande/panier.png" class="dish-img">
+                <div class="dish-info">
+                    <div class="commande-info">
+                        <p>Commande du 08/07 </p>
+                        <p>- 1 salade fraiche</p>
+                        <p> - 1 frite </p>
+                    </div>
+                    <p>15€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="3" data-name="provencale" data-price="15">+</button>
+
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="media/commande/panier.png" class="dish-img">
+                <div class="dish-info">
+                    <div class="commande-info">
+                        <p>Commande du 15/06 </p>
+                        <p>- 1 salade fraiche</p>
+                        <p> - 1 tiramisu </p>
+                    </div>
+                    <p>17€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="4" data-name="fraiche" data-price="17">+</button>
+
+                </div>
+            </div>
+
+        </div>
+            
+
+    </main>
+
+    <footer id="Total">
+        <p class="bold_text">Total : 0€</p>
+        <button class="button2" id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
+    </footer>
+
+    <script src="js/habitude.js"></script>
+
+</body>
+</html>
+
