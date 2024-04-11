@@ -7,36 +7,42 @@
     </head>
     <body>
         <div class="text_align">
-            <img src="media/food/salades/provencale.png" class="img">
-            <h1>Salade Provencale</h1> <br><br><br>
-
+            <header>
+                <button class="button" onclick="backToMenu()"><label for="back" data-translate="back">Retour</label></button>
+                
+            </header>
+            <h1 class="center-text">Salade Provencale</h1> 
+            <img src="media/food/salades/provencale.png" class="img" width="180">
 
             <center>
             <div class="ingredients">
-             <p1>Poulet, Anchoix, Oeufs, Poivrons, Oignons, Huile d'olive, Huile d'arachide, Poivre, Tomates, Salade, Cresson, Olives, Cornichons, Câpres, Moutarde, Persil hâché, Riz</p1>
+                <h2>Ingrédients</h2>
+                <p1 class="ingredient">Poulet, Oeufs, Poivrons, Oignons, Poivre, Tomates, Salade, Cornichons, Moutarde, Persil hâché</p1>
             </div>
             </center> <!-- pas opti mais ça fonctionne -->
-
-            <br><br><br>
-
             <div style="flex-direction: row;">
                 <img src="media/allergeneFree.png" class="img" style="max-width: 97px;">
                 <img src="media/nutriscore.png" class="img" style="max-height: 100px;">
             </div>
 
-            <br><br><br>
+
 
         <footer>
-            <button class="button button1" onclick="backToMenu()"><label for="back" data-translate="back">Back</label></button>
+            
+            <button class="button button1" onclick="goToPersonalization()"><label for="Customize" >Personnaliser</label></button>
+            <button class="ajouter-button" onclick="backToMenu()"><label for="Panier">Ajouter</label></button>
         </footer>
         
         </div>
 
-        <script src="js/home.js"></script>
+
         <script src="js/translate.js"></script>
         <script>
             function backToMenu(){
                 window.location.href="menu.html";
+            }
+            function goToPersonalization(){
+                window.location.href="custom.html";
             }
         </script>
     </body>

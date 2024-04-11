@@ -1,8 +1,20 @@
-h1 {
-    font-family: "Helvetica", sans-serif;
-    font-size: 50px;
+
+@font-face {
+    font-family: 'Saladd';
+    src: url('saladd.otf') ; 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
 }
 
+h2{
+    font-family: "Saladd",sans-serif;
+    color: #F4D13D;
+}
 
 .text_align {
     text-align: center;
@@ -19,17 +31,29 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 4px 2px;
+  
   }
 
+.ajouter-button{
+    border-radius: 8px;
+    background-color: #F4D13D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
 .img{
     max-width: 250px;
-    padding: 20px;
+    padding: 10px;
 }
 
-.p1{
+.ingredient{
     text-align: justify;
-    font-size:12px;   
+    font-size:35px;  
+    font-family: "Saladd",sans-serif;
 }
 
 
@@ -39,6 +63,14 @@ h1 {
     font-size: 30px;
 }
 
+.center-text {
+    flex-grow: 1;
+    font-size: 45px;
+    font-family: "Saladd",sans-serif;
+    color :#009246;
+    text-align: center;
+    margin: 0;
+  }
 
 footer {
     padding: 10px;
