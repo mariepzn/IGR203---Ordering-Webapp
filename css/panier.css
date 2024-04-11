@@ -67,21 +67,21 @@ p{
 }
 
 .flex-container {
-    display: flex; /* Active flexbox */
-    justify-content: space-between; /* Répartit l'espace entre les éléments */
-    align-items: center; /* Centre les éléments verticalement */
-    max-width: 400px; /* Largeur maximale de 300px */
-    padding: 10px; /* Espacement interne pour aérer */
-    margin: 0 auto; /* Centre le bloc horizontalement */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 400px; 
+    padding: 10px; 
+    margin: 0 auto; 
 }
 
 
 .flex-item-left {
-    text-align: left; /* Alignement du texte à gauche */
-    flex: 1; /* Prend de l'espace disponible */
+    text-align: left;
+    flex: 1;
 }
 
 .flex-item-right {
-    text-align: right; /* Alignement du texte à droite */
-    flex: 1; /* Prend de l'espace disponible */
+    text-align: right;
+    flex: 1;
 }

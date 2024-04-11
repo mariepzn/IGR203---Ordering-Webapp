@@ -1,4 +1,4 @@
 function setLanguage(lang) {
     localStorage.setItem('selectedLang', lang);
-    window.location.href = "login.html";
+    window.location.href = "loginQuestion.html";
 }

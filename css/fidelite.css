@@ -103,3 +103,71 @@ main .dish-info p {
 .btn-info, .btn-add {
     margin-top: 5px;
 }
+
+
+.category {
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.category:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.category h2 {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.category-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dish:last-child {
+    border-bottom: none;
+}
+
+
+.category h2 {
+    position: relative;
+    padding-right: 30px; /* Assurez-vous d'avoir assez d'espace pour l'icône */
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../media/inv.png');
+    background-size: contain;
+}
+
+
+.checkout-button { /* de panier.css */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background-color: rgb(233, 212, 25);
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}

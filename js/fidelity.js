@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const platName = this.getAttribute('data-name');
             const platPrice = parseFloat(this.getAttribute('data-price'));
             addItemToCart(platId, platName, platPrice);
-            updateTotal();
         });
     });
 
@@ -55,25 +54,48 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
-    function updateTotal() {
-        let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
-        let total = 0;
-        Object.keys(cart).forEach(key => {
-            total += cart[key].price * cart[key].quantity;
-        });
-        document.querySelector('footer p').textContent = `Total : ${total}€`; //inutile ici car pas de footer
-    }
-
-    updateTotal();
 });
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const userPoints = 22; // Ajustez cette valeur selon les points de l'utilisateur
+    const userPoints = 22;
     document.querySelectorAll('.category').forEach(function(category) {
         const pointsNeeded = parseInt(category.getAttribute('data-points'), 10);
         if (pointsNeeded > userPoints) {
             category.classList.add('disabled');
+        }
+    });
+});
+
+
+
+document.querySelectorAll('.category h2').forEach(header => {
+    header.addEventListener('click', function() {
+        const category = this.parentNode;
+        const dishes = category.querySelectorAll('.dish');
+        dishes.forEach(dish => {
+            dish.style.display = dish.style.display === 'none' ? 'flex' : 'none';
+        });
+    });
+});
+
+
+document.querySelectorAll('.dish').forEach(dish => {
+    dish.style.display = 'none';
+});
+
+
+document.querySelectorAll('.category h2').forEach(function(header) {
+    header.addEventListener('click', function() {
+
+        this.parentNode.classList.toggle('open');
+
+        //pour cnhager l'icone de sens
+        var icon = this.querySelector('.dropdown-icon');
+        if (this.parentNode.classList.contains('open')) {
+            icon.style.backgroundImage = "url('../media/v.png')";
+        } else {
+            icon.style.backgroundImage = "url('../media/inv.png')";
         }
     });
 });
