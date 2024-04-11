@@ -53,6 +53,11 @@ header #homeButton, header #cartButton, .btn {
     background-color: #2ecc71;
 }
 
+.btn-sub {
+    background-color: #2ecc71;
+}
+
+
 header #searchBar {
     padding: 5px;
     border: 1px solid #ccc;

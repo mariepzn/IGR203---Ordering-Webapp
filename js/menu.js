@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('searchBar');
     const categories = document.querySelectorAll('#categories li');
@@ -39,20 +40,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // pour le panier et ajouter les articles
-
+//Add item to the cart 
 document.addEventListener('DOMContentLoaded', function() {
     const addToCartButtons = document.querySelectorAll('.btn-add');
-
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function() {
+
             const platId = this.getAttribute('data-id');
             const platName = this.getAttribute('data-name');
             const platPrice = parseFloat(this.getAttribute('data-price'));
+            const quantityDisplay = document.querySelector('.quantity[data-id="' + platId + '"]');
+            let quantity = parseInt(quantityDisplay.textContent);
+            quantityDisplay.textContent = ++quantity;
+      
+
             addItemToCart(platId, platName, platPrice);
             updateTotal();
         });
     });
 
+    
+
+    
     function addItemToCart(id, name, price) {
         let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
         if (cart[id]) {
@@ -63,19 +72,51 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
-    function updateTotal() {
-        let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
-        let total = 0;
-        Object.keys(cart).forEach(key => {
-            total += cart[key].price * cart[key].quantity;
-        });
-        document.querySelector('footer#Total p').textContent = `Total : ${total}€`;
-    }
+    
 
     updateTotal();
 });
+//Substract Item from the cart
+document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.btn-sub');
 
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+    
+            const platId = this.getAttribute('data-id');
+            const platName = this.getAttribute('data-name');
+            const platPrice = parseFloat(this.getAttribute('data-price'));
+            const quantityDisplay = document.querySelector('.quantity[data-id="' + platId + '"]');
+            let quantityDispl = parseInt(quantityDisplay.textContent);
+            if (quantityDispl > 0) {
+                quantityDisplay.textContent = --quantityDispl;
+                subItemToCart(platId, platName, platPrice);
+                updateTotal();
+            }
+            
+        });
+    });
+    function subItemToCart(id, name, price) {
+        let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
+        if (cart[id]) {
+            cart[id].quantity -= 1;
+        } else {
+            cart[id] = {name: name, price: price, quantity: 1};
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
 
+    
+ 
+});
+function updateTotal() {
+    let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
+    let total = 0;
+    Object.keys(cart).forEach(key => {
+        total += cart[key].price * cart[key].quantity;
+    });
+    document.querySelector('footer#Total p').textContent = `Total : ${total}€`;
+}
 document.getElementById('clear-cart').addEventListener('click', function() {
     localStorage.removeItem('cart'); // vide la panier
     window.location.reload(); //actualise pour paneir vide
