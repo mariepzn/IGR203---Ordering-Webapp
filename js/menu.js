@@ -225,3 +225,38 @@ document.getElementById('clear-cart').addEventListener('click', () => {
     });
     document.querySelector('#Total .bold_text').textContent = 'Total : 0€';
 });
+
+
+
+//
+
+
+// Function to update menu item quantities based on cart data
+function updateMenuQuantities() {
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || {};
+    document.querySelectorAll('.dish .quantity').forEach(item => {
+        const itemId = item.getAttribute('data-id');
+        if (cartItems[itemId]) {
+            item.textContent = cartItems[itemId].quantity;
+        }
+    });
+}
+
+// Call this function when the page loads
+document.addEventListener('DOMContentLoaded', updateMenuQuantities);
+
+document.querySelectorAll('.btn-add').forEach(button => {
+    button.addEventListener('click', function() {
+        const itemId = this.getAttribute('data-id');
+        const itemName = this.getAttribute('data-name');
+        const itemPrice = parseFloat(this.getAttribute('data-price'));
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || {};
+        if (!cartItems[itemId]) {
+            cartItems[itemId] = {name: itemName, price: itemPrice, quantity: 0};
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+        updateMenuQuantities();
+    });
+});
+
