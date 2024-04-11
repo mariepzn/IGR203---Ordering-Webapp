@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Information</title>
+        <link rel="icon" href="media/icon.png"> <!--icon du site-->
+        <link href="css/info.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text_align">
+            <header>
+                <button class="button" onclick="backToMenu()"><label for="back" data-translate="back">Retour</label></button>
+                
+            </header>
+            <h1 class="center-text">Salade Fraiche</h1> 
+            <img src="media/food/salades/fraiche.png" class="img" width="180">
+
+            <center>
+            <div class="ingredients">
+                <h2>Ingrédients</h2>
+                <p1 class="ingredient">Melon, Mozarella, Poivrons, Jambon de Parme, Tomates, Salade, Graine</p1>
+                <h2>Allergènes</h2>
+                <div style="flex-direction: row;">
+                    <img src="media/allergenes/lait.png" class="img" style="max-width: 97px;">
+                    <img src="media/allergenes/graines.png" class="img" style="max-width: 97px;">
+                </div>
+            </div>
+            </center> <!-- pas opti mais ça fonctionne -->
+            <div style="flex-direction: row;">
+                <img src="media/nutriscore.png" class="img" style="max-height: 100px;">
+            </div>
+
+
+
+        <footer>
+            
+            <button class="button button1" onclick="goToPersonalization()"><label for="Customize" >Personnaliser</label></button>
+            <button class="ajouter-button" onclick="backToMenu()"><label for="Panier">Ajouter</label></button>
+        </footer>
+        
+        </div>
+
+
+        <script src="js/translate.js"></script>
+        <script>
+            function backToMenu(){
+                window.location.href="menu.html";
+            }
+            function goToPersonalization(){
+                window.location.href="custom-fraiche.html";
+            }
+        </script>
+    </body>
+
+    
+</html>

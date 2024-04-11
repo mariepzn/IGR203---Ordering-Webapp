@@ -8,7 +8,7 @@ header, footer {
     text-align: center;
 }
 
-header #homeButton, header #cartButton, .btn {
+ .btn {
     padding: 5px 10px;
     background-color: #5cb85c;
     color: white;
@@ -29,26 +29,7 @@ header #homeButton, header #cartButton, .btn {
     background-color: #2ecc71;
 }
 
-header #searchBar {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-nav #categories {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 10px;
-    background-color: #ddd;
-}
-
-nav #categories li {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-}
 
 main .category {
     padding: 10px;
@@ -74,4 +55,16 @@ main .dish-info {
 main .dish-info p {
     margin: 0 10px;
 }
+.ajouter-button{
+    border-radius: 8px;
+    background-color: #F4D13D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
 
