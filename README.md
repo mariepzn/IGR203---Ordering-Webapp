@@ -12,9 +12,15 @@ Le projet consiste à concevoir un menu interactif de restaurant. Nous avons cho
 -Panier interactif
 
 ## Languages utilisés :
-HTMl : structure de base du site
+HTML : structure de base du site
 CSS : Pour le design
 JavaScript : Pour la logique interactive du menu et du système de panier
+
+## Organisation du code
+Les pages html sont toutes dans le dossier source avec le serveur.js qui permet de lancer le serveur
+Des dossiers css et js regroupent les fichiers en question associés aux pages web
+Un dossier json regroupe les dictionnaires utilisés pour la traduction du site
+Finalement un dossier media regroupe les images utilisées au travers des pages
 
 
 ## Cloner le dépot:
@@ -27,6 +33,8 @@ git clone https://github.com/Surimi91/IGR203.git
 2. cd dans le dossier
 3. node serveur.js
 4. Le serveur est desormais en ligne sur votre réseau local, accezdez-y via votre ip + port :3000
+
+0. Autre méthode : ouvrir avec le live server VSCode
 
 
 ## Contributions :
