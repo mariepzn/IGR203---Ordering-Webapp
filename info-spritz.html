@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Information</title>
+        <link rel="icon" href="media/icon.png"> <!--icon du site-->
+        <link href="css/info.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text_align">
+            <header>
+                <button class="button" onclick="backToMenu()"><label for="back" data-translate="back">Retour</label></button>
+                
+            </header>
+            <h1 class="center-text" style="color: rgb(241, 64, 64);">Spritz</h1> 
+            <img src="media/food/boissons/spirtz.png" class="img" width="110">
+
+            <center>
+            <div class="ingredients">
+                <h2>Composition</h2>
+                <p1 class="ingredient" style="font-size: 80%;">Campari 4cl<br/>Prosecco 6cl<br/>Eau gazeuse 2cl</p1>
+                <h2>Allergènes</h2>
+                    <img src="media/allergeneFree.png" class="img" style="max-width: 97px;">
+            </div>
+            </center> <!-- pas opti mais ça fonctionne -->
+ 
+
+        <footer>
+            <button class="ajouter-button" onclick="backToMenu()"><label for="Panier">Ajouter</label></button>
+        </footer>
+        
+        </div>
+
+
+        <script src="js/translate.js"></script>
+        <script>
+            function backToMenu(){
+                window.location.href="menu.html";
+            }
+            function goToPersonalization(){
+                window.location.href="custom-fraiche.html";
+            }
+        </script>
+    </body>
+
+    
+</html>
