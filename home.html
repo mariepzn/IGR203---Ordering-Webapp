@@ -10,9 +10,20 @@
           <img src="media/LogoSaladd.png" alt="logo" width="500"> <br><br><br>
         </div>
 
-        <div class="text_align">
-            <button class="button button1" onclick="languageSelection()"><label for="start" data-translate="start">Start</label></button>
-        </div>
+        <br>
+
+        <form id="tableForm" style="text-align: center;">
+            <p>Table : <input type="text" id="table" name="table" required></p>
+            <div class="text_align">
+                <button class="button button1" onclick="submitForm()"><label for="start" data-translate="start">Start</label></button>
+            </div>
+    
+        </form>
+        
+
+        <br><br>
+
+
 
         <script src="js/home.js"></script>
         <script src="js/translate.js"></script>

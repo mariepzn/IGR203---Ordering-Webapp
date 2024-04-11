@@ -20,3 +20,37 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
   }
+
+
+
+
+
+  /* numero table */
+
+
+  .form_container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_group input[type="text"],
+.form_group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

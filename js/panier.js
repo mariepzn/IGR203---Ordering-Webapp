@@ -13,3 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('#total').textContent = `Total : ${total}€`;
 });
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    var tableNumber = localStorage.getItem('tableNumber');
+    document.getElementById('tableNumberDisplay').textContent = tableNumber;
+});
