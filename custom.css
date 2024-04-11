@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+
+ .btn {
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-info {
+    background-color: #3498db;
+}
+
+.btn-add {
+    background-color: #2ecc71;
+}
+
+.btn-sub {
+    background-color: #2ecc71;
+}
+
+
+
+main .category {
+    padding: 10px;
+}
+
+main .dish {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .dish-img {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+main .dish-info {
+    display: flex;
+    align-items: center;
+}
+
+main .dish-info p {
+    margin: 0 10px;
+}
+.ajouter-button{
+    border-radius: 8px;
+    background-color: #F4D13D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+

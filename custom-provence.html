@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Personnalisation</title>
+    <link rel="icon" href="media/icon.png">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <main style="text-align: center;">
+    
+        <div classe ="colonne">
+            <div class="dish boissons">
+                <img src="media/ingredients/poulet.jpg" class="dish-img">
+                <div class="dish-info">
+                    <p>Poulet</p>
+                    <p>1€</p> <p></p>
+                    <button class="btn btn-add" data-id="1" data-name="graines" data-price="1">+</button>
+                    <span class="quantity" data-id="1">1</span>
+                    <button class="btn btn-sub" data-id="1" data-name="graines" data-price="1">-</button>
+                </div>
+            </div>
+            
+            <div class="dish boissons">
+                <img src="media/ingredients/oeuf.jpg" class="dish-img">
+                <div class="dish-info">
+                    <p>Oeufs</p>
+                    <p>1€</p> <p></p>
+                    <button class="btn btn-add" data-id="2" data-name="melon" data-price="1">+</button>
+                    <span class="quantity" data-id="2">1</span> 
+                    <button class="btn btn-sub" data-id="2" data-name="melon" data-price="1">-</button>
+                </div>
+            </div>
+            <div class="dish boissons">
+                <img src="media/ingredients/poivron.jpg" class="dish-img">
+                <div class="dish-info">
+                    <p>Poivron</p>
+                    <p>0.5€</p> <p></p>
+                    <button class="btn btn-add" data-id="3" data-name="melon" data-price="0.5">+</button>
+                    <span class="quantity" data-id="3">1</span> 
+                    <button class="btn btn-sub" data-id="3" data-name="melon" data-price="0.5">-</button>
+                </div>
+            </div>
+        </div>
+        <div classe = "colonne">
+            <div class="dish boissons">
+                <img src="media/ingredients/oignon.webp" class="dish-img">
+                <div class="dish-info">
+                    <p>Oignons</p>
+                    <p>0.2€</p> <p></p>
+                    <button class="btn btn-add" data-id="4" data-name="graines" data-price="0.2">+</button>
+                    <span class="quantity" data-id="4">1</span>
+                    <button class="btn btn-sub" data-id="4" data-name="graines" data-price="0.2">-</button>
+                </div>
+            </div>
+    
+            <div class="dish boissons">
+                <img src="media/ingredients/tomate.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Tomate</p>
+                    <p>0.5€</p> <p></p>
+                    <button class="btn btn-add" data-id="5" data-name="melon" data-price="0.5">+</button>
+                    <span class="quantity" data-id="5">1</span> 
+                    <button class="btn btn-sub" data-id="5" data-name="melon" data-price="0.5">-</button>
+                </div>
+            </div>
+    
+            <div class="dish boissons">
+                <img src="media/ingredients/salade.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Salade</p>
+                    <p>0.5€</p> <p></p>
+                    <button class="btn btn-add" data-id="6" data-name="melon" data-price="0.5">+</button>
+                    <span class="quantity" data-id="6">1</span> 
+                    <button class="btn btn-sub" data-id="6" data-name="melon" data-price="0.5">-</button>
+                </div>
+            </div>
+            
+            <div class="dish boissons">
+                <img src="media/ingredients/persil.jpg" class="dish-img">
+                <div class="dish-info">
+                    <p>Persil</p>
+                    <p>0.1€</p> <p></p>
+                    <button class="btn btn-add" data-id="7" data-name="melon" data-price="0.1">+</button>
+                    <span class="quantity" data-id="7">1</span> 
+                    <button class="btn btn-sub" data-id="7" data-name="melon" data-price="0.1">-</button>
+                </div>
+            </div> 
+        </div>
+
+
+    </main>
+    
+   
+    <footer>
+        <p>Total : 6€</p>
+        <button class="ajouter-button" onclick="addToCart()">Add</button>
+
+    </footer>
+
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
