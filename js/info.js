@@ -1,19 +1,39 @@
 function addToCart(id) {
     if (id === 4) {
         const platId = "4";
-        const platName = "fraiche";
+        const platName = "Salade fraiche";
         const platPrice = "7";
         addItemToCart(platId, platName, platPrice);
         
     }
     if (id === 3) {
         const platId = "3";
-        const platName = "provencale";
+        const platName = "Salade provencale";
         const platPrice = "10";
         addItemToCart(platId, platName, platPrice);
         
     }
-    
+    if (id === 1) {
+        const platId = "1";
+        const platName = "Sex on the Beach";
+        const platPrice = "8";
+        addItemToCart(platId, platName, platPrice);
+        
+    }
+    if (id === 1) {
+        const platId = "2";
+        const platName = "Spritz";
+        const platPrice = "7";
+        addItemToCart(platId, platName, platPrice);
+        
+    }
+    if (id === 5) {
+        const platId = "5";
+        const platName = "Tiramisu";
+        const platPrice = "5.5";
+        addItemToCart(platId, platName, platPrice);
+        
+    }
     
 
 }
