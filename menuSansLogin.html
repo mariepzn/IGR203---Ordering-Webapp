@@ -12,7 +12,7 @@
             <img src="media/LogoSaladd.png" alt="logo" width="250"> <br><br><br>
           </div>
         <div>
-            <button id="homeButton" class="button3" onclick="goToHome()">Accueil</button>
+            <button class="button3" onclick="window.location.href='home.html'">Accueil</button>
             <input type="search" id="searchBar" placeholder="Rechercher...">
             <button id="panierButton" class= "button3" onclick="window.location.href='panier.html';">Panier</button>
             <button id="clear-cart" class = "button3">Vider le panier</button>
@@ -35,7 +35,10 @@
                 <div class="dish-info">
                     <p>Sex on the Beach</p>
                     <p>8€</p>
-                    <button class="btn btn-info">i</button> <p> </p>  <!-- faudra que je trouve un autre separateur lateral que des espaces -->
+                    <button class="btn btn-info" onclick="goToInfoS()">i</button> <p> </p>
+                    
+                    <button class="btn btn-sub" data-id="1" data-name="Sex on the Beach" data-price="8">-</button>
+                    <span class="quantity" data-id="1">0</span>
                     <button class="btn btn-add" data-id="1" data-name="Sex on the Beach" data-price="8">+</button> <!--id unique pour chaque item-->
                 </div>
             </div>
@@ -46,8 +49,13 @@
                 <div class="dish-info">
                     <p>Spritz</p>
                     <p>7€</p>
-                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-info" onclick="goToInfoSp()">i</button> <p> </p>
+                    
+                    <button class="btn btn-sub" data-id="2" data-name="Spritz" data-price="7">-</button>
+                    <span class="quantity" data-id="2">0</span>
                     <button class="btn btn-add" data-id="2" data-name="Spritz" data-price="7">+</button>
+                    
+</div>
 
                 </div>
             </div>
@@ -58,9 +66,12 @@
                 <div class="dish-info">
                     <p>Salade provencale</p>
                     <p>10€</p>
-                    <button class="btn btn-info">i</button> <p> </p>
-                    <button class="btn btn-add" data-id="3" data-name="provencale" data-price="10">+</button>
-
+                    <button class="btn btn-info" onclick="goToInfoP()">i</button> <p> </p>
+                    
+                    <button class="btn btn-sub" data-id="3" data-name="Salade provencale" data-price="10">-</button>
+                    <span class="quantity" data-id="3">0</span>
+                    <button class="btn btn-add" data-id="3" data-name="Salade provencale" data-price="10">+</button>
+                    
                 </div>
             </div>
 
@@ -69,19 +80,32 @@
                 <div class="dish-info">
                     <p>Salade fraiche</p>
                     <p>7€</p>
-                    <button class="btn btn-info">i</button> <p> </p>
-                    <button class="btn btn-add" data-id="4" data-name="fraiche" data-price="7">+</button>
-
+                    <button class="btn btn-info" onclick="goToInfoF()">i</button> <p> </p>
+                    
+                    <button class="btn btn-sub" data-id="4" data-name="Salade fraiche" data-price="7">-</button>
+                    <span class="quantity" data-id="4">0</span>
+                    <button class="btn btn-add" data-id="4" data-name="Salade fraiche" data-price="7">+</button>
                 </div>
             </div>
 
 
+            <div class="dish desserts">
+                <img src="media/food/dessert/tiramisu.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Tiramisu</p>
+                    <p>5€50</p>
+                    <button class="btn btn-info" onclick="goToInfoT()">i</button> <p> </p>
+                    
+                    <button class="btn btn-sub" data-id="5" data-name="tiramisu" data-price="5.5">-</button>
+                    <span class="quantity" data-id="5">0</span>
+                    <button class="btn btn-add" data-id="5" data-name="tiramisu" data-price="5.5">+</button>
+                </div>
+            </div>
+
+
+
     </main>
-    
-    <footer id="habitude">
-        <p class="bold_text">Comme d'habitude ? </p>
-        <button class= "button2" id="habitudeButton" onclick="goToHabitude()">></button>
-    </footer>
+<br>
     <footer id="Total">
         <p class="bold_text">Total : 0€</p>
         <button class="button2" id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
