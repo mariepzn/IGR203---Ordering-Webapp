@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Information</title>
+        <link rel="icon" href="media/icon.png"> <!--icon du site-->
+        <link href="css/info.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text_align">
+            <img src="media/food/salades/provencale.png" class="img">
+            <h1>Salade Provencale</h1> <br><br><br>
+
+
+            <center>
+            <div class="ingredients">
+             <p1>Poulet, Anchoix, Oeufs, Poivrons, Oignons, Huile d'olive, Huile d'arachide, Poivre, Tomates, Salade, Cresson, Olives, Cornichons, Câpres, Moutarde, Persil hâché, Riz</p1>
+            </div>
+            </center> <!-- pas opti mais ça fonctionne -->
+
+            <br><br><br>
+
+            <div style="flex-direction: row;">
+                <img src="media/allergeneFree.png" class="img" style="max-width: 97px;">
+                <img src="media/nutriscore.png" class="img" style="max-height: 100px;">
+            </div>
+
+            <br><br><br>
+
+        <footer>
+            <button class="button button1" onclick="backToMenu()"><label for="back" data-translate="back">Back</label></button>
+        </footer>
+        
+        </div>
+
+        <script src="js/home.js"></script>
+        <script src="js/translate.js"></script>
+        <script>
+            function backToMenu(){
+                window.location.href="menu.html";
+            }
+        </script>
+    </body>
+
+    
+</html>
