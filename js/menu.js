@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('searchBar');
     const categories = document.querySelectorAll('#categories li');
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // pour le panier et ajouter les articles
-//Add item to the cart 
+
 document.addEventListener('DOMContentLoaded', function() {
     const addToCartButtons = document.querySelectorAll('.btn-add');
     addToCartButtons.forEach(button => {
@@ -162,3 +161,60 @@ function goToHabitude(){
         window.location.href = "info-provencale.html";}
         function goToInfoF(){
             window.location.href = "info-fraiche.html";}
+
+
+
+
+
+//pour garder les quantités affichées quand on recharge la page
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.quantity').forEach(element => {
+        const id = element.getAttribute('data-id');
+        const storedQuantity = localStorage.getItem('product_' + id);
+        if (storedQuantity) {
+            element.textContent = storedQuantity;
+        }
+    });
+
+
+    document.querySelectorAll('.btn-add').forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            const quantitySpan = document.querySelector('.quantity[data-id="' + id + '"]');
+            let quantity = parseInt(quantitySpan.textContent);
+
+            quantitySpan.textContent = quantity;
+   
+            localStorage.setItem('product_' + id, quantity);
+        });
+    });
+
+ 
+    document.querySelectorAll('.btn-sub').forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            const quantitySpan = document.querySelector('.quantity[data-id="' + id + '"]');
+            let quantity = parseInt(quantitySpan.textContent);
+
+                quantitySpan.textContent = quantity;
+                
+                localStorage.setItem('product_' + id, quantity);
+    
+        });
+    });
+});
+
+
+
+
+//vider le panier correction
+
+document.getElementById('clear-cart').addEventListener('click', () => {
+    document.querySelectorAll('.quantity').forEach(element => {
+        const id = element.getAttribute('data-id');
+        element.textContent = '0';
+        localStorage.removeItem('product_' + id);
+    });
+    document.querySelector('#Total .bold_text').textContent = 'Total : 0€';
+});
