@@ -116,3 +116,5 @@ function goToHabitude(){
     window.location.href = "habitude.html";}
     function goToInfoP(){
         window.location.href = "info-provencale.html";}
+        function goToInfoF(){
+            window.location.href = "info-fraiche.html";}
