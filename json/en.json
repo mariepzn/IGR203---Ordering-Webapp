@@ -5,5 +5,6 @@
     "forgot_password": "Forgot password?",
     "new_user": "New user?",
     "create_account": "Create an account",
-    "start" : "Welcome"
+    "start" : "Welcome",
+    "skipLogin" : "Skip Login"
 }
