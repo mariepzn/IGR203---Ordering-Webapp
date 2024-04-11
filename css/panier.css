@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'Saladd';
+    src: url('saladd.otf') format('otf'); 
+}
+
 .cart-items {
     text-align: left;
     font-size: 22px;
@@ -5,6 +11,7 @@
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
+    font-family: "Saladd", sans-serif;
 }
 
 .cart-item {
@@ -35,10 +42,12 @@ button {
 
 
 h1{
+    font-family: "Saladd", sans-serif;
     color: #009246;
 }
 
 p{
+    font-family: "Saladd", sans-serif;
     color: #009246;
 }
 
@@ -46,12 +55,20 @@ p{
 
 .menu-button {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 20px;
-    border-radius: 20px;
-    background-color: #009246;
-    padding: 10px 20px;
     cursor: pointer;
+
+    font-family: "Saladd", sans-serif;
+    border-radius: 8px;
+    background-color: #009246;
+    border: none;
+    color: white;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
 }
 
 .checkout-button {
@@ -59,11 +76,17 @@ p{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 20px;
-    background-color: rgb(233, 212, 25);
-    color: black;
-    padding: 10px 20px;
     cursor: pointer;
+
+    border-radius: 8px;
+    background-color: #F4D13D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    display: inline-block;
+    font-size: 20px;
 }
 
 .flex-container {
@@ -77,11 +100,14 @@ p{
 
 
 .flex-item-left {
+    font-family: "Saladd", sans-serif;
     text-align: left;
     flex: 1;
 }
 
 .flex-item-right {
+    color: #009246;
+    font-family: "Saladd", sans-serif;
     text-align: right;
     flex: 1;
 }

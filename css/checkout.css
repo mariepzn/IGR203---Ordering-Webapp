@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'Saladd';
+    src: url('saladd.otf') format('otf'); 
+}
 h1 {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Saladd", sans-serif;
 }
 
 
@@ -9,11 +13,13 @@ h1 {
 
 
 .p1{
+    font-family: "Saladd", sans-serif;
     color: green;
     font-size: xx-large;
 }
 
 .button {
+    font-family: "Saladd", sans-serif;
     border-radius: 8px;
     background-color: #009246;
     border: none;
@@ -22,6 +28,5 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 20px;
   }
