@@ -4,17 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const dishes = document.querySelectorAll('.dish');
 
         // filtrage des categories de plats
-    categories.forEach(category => {
-        category.addEventListener('click', () => {
-            const categoryValue = category.getAttribute('data-category');
-            dishes.forEach(dish => {
-                if (dish.classList.contains(categoryValue) || categoryValue === 'all') {
-                        dish.style.display = '';
-                } else {dish.style.display = 'none';}
-                });
+        categories.forEach(category => {
+            category.addEventListener('click', () => {
+                if (!category.classList.contains('selected')) {
+                    // Remove the 'selected' class from all categories
+                    categories.forEach(cat => cat.classList.remove('selected'));
+                    
+                    // Add the 'selected' class to the clicked category
+                    category.classList.add('selected');
+                    
+                    const categoryValue = category.getAttribute('data-category');
+                    dishes.forEach(dish => {
+                        if (dish.classList.contains(categoryValue) || categoryValue === 'all') {
+                            dish.style.display = '';
+                        } else {
+                            dish.style.display = 'none';
+                        }
+                    });
+                }
             });
         });
-
     // afficher les plats qui contiennent le texte de la searchbar
     searchBar.addEventListener('input', () => {
         const searchText = searchBar.value.toLowerCase();
@@ -60,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Object.keys(cart).forEach(key => {
             total += cart[key].price * cart[key].quantity;
         });
-        document.querySelector('footer p').textContent = `Total : ${total}€`;
+        document.querySelector('footer#Total p').textContent = `Total : ${total}€`;
     }
 
     updateTotal();
@@ -95,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function goToFidelite(){
     window.location.href = "fidelite.html";
+}
+function goToHome(){
+    window.location.href = "menu.html";
 }
 
 function close(){

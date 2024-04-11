@@ -8,11 +8,15 @@
 </head>
 <body>
     <header>
-        <button id="homeButton">Acceuil</button>
-        <input type="search" id="searchBar" placeholder="Rechercher...">
-        <button id="panierButton" onclick="window.location.href='panier.html';">Panier</button>
-        <button id="clear-cart">Vider le panier</button>
-
+        <div >
+            <img src="media/LogoSaladd.png" alt="logo" width="250"> <br><br><br>
+          </div>
+        <div>
+            <button id="homeButton" class="button3" onclick="goToHome()">Acceuil</button>
+            <input type="search" id="searchBar" placeholder="Rechercher...">
+            <button id="panierButton" class= "button3" onclick="window.location.href='panier.html';">Panier</button>
+            <button id="clear-cart" class = "button3">Vider le panier</button>
+        </div>
 
     </header>
     
@@ -74,10 +78,13 @@
 
     </main>
     
-    
-    <footer>
-        <p>Total : 0€</p>
-        <button id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
+    <footer id="habitude">
+        <p class="bold_text">Comme d'habitude ? </p>
+        <button class= "button2" id="habitudeButton" onclick="window.location.href='panier.html';">></button>
+    </footer>
+    <footer id="Total">
+        <p class="bold_text">Total : 0€</p>
+        <button class="button2" id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
     </footer>
 
     <script src="js/menu.js"></script>

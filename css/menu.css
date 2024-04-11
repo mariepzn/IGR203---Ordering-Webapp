@@ -1,12 +1,41 @@
+
+@font-face {
+    font-family: 'Saladd';
+    src: url('saladd.otf') format('otf'); 
+}
 body {
     font-family: Arial, sans-serif;
 }
 
-header, footer {
+header {
     padding: 10px;
     background-color: #eee;
     text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
+footer#Total {
+    padding: 10px;
+    background-color: #5cb85c;
+    text-align: center;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+footer#habitude {
+    padding: 10px;
+    background-color: #F4D13D;
+    text-align: center;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 
 header #homeButton, header #cartButton, .btn {
     padding: 5px 10px;
@@ -36,14 +65,18 @@ nav #categories {
     justify-content: space-around;
     list-style-type: none;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #5cb85c;;
 }
 
 nav #categories li {
+    padding: 5px 155px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: white;
     cursor: pointer;
-    padding: 5px 10px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
 }
 
 main .category {
@@ -106,4 +139,45 @@ main .dish-info p {
     color: white;
     cursor: pointer;
     font-size: 16px;
+}
+.button3 {
+    
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Saladd", sans-serif;
+}
+.button2 {
+    
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: green;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto;
+    font-family: "Saladd", sans-serif;
+
+
+}
+.bold_text {
+    font-family: 'Saladd', sans-serif;
+    font-weight: bold;
+}
+.selected {
+
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: green;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Saladd", sans-serif;
+
 }
