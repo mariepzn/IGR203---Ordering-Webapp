@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <link rel="icon" href="media/icon.png">
     <title>Récapitulatif du Panier</title>
-    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/panier.css">
 </head>
-<body>
-    <h1>Récapitulatif de votre commande</h1>
+<body style="text-align: center;">
+    <h1>Votre commande</h1>
     <div id="cart-items" class="cart-items"></div>
+    
+    <div class="form_group">
+        <p>Code Promotionnel :  
+        <input type="text" id="username" name="username" required> </p>
+
+        <p>Points gagnés : 5</p>
+    </div>
+
+
+
     <p id="total" class="total"></p>
     <button onclick="window.location.href='menu.html'">Retour au menu</button>
 

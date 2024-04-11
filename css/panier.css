@@ -22,10 +22,19 @@
 
 
 button {
-    background-color: #4CAF50; /* pas le bon vert */
+    background-color: #009246;
     color: white;
     padding: 15px 20px;
     margin: 10px 0;
     border: none;
     cursor: pointer;
+}
+
+
+h1{
+    color: #009246;
+}
+
+p{
+    color: #009246;
 }
