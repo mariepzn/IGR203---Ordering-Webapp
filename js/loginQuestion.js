@@ -3,5 +3,5 @@ function goToLogin() {
     }
 
 function skipLogin(){
-    window.location.href = "menu.html";
+    window.location.href = "menuSansLogin.html";
 }

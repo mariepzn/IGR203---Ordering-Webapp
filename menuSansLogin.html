@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu du Restaurant</title>
+    <link rel="icon" href="media/icon.png">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>
+        <div >
+            <img src="media/LogoSaladd.png" alt="logo" width="250"> <br><br><br>
+          </div>
+        <div>
+            <button id="homeButton" class="button3" onclick="goToHome()">Accueil</button>
+            <input type="search" id="searchBar" placeholder="Rechercher...">
+            <button id="panierButton" class= "button3" onclick="window.location.href='panier.html';">Panier</button>
+            <button id="clear-cart" class = "button3">Vider le panier</button>
+        </div>
+
+    </header>
+    
+    <nav>
+        <ul id="categories">
+            <li data-category="salades">Salades</li>
+            <li data-category="boissons">Boissons</li>
+            <li data-category="desserts">Desserts</li>
+        </ul>
+    </nav>
+    
+    <main>
+            <!-- automatiser ça avec une base de donnees sera bien mieux -->
+            <div class="dish boissons">
+                <img src="media/food/boissons/sexOnTheBeach.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Sex on the Beach</p>
+                    <p>8€</p>
+                    <button class="btn btn-info">i</button> <p> </p>  <!-- faudra que je trouve un autre separateur lateral que des espaces -->
+                    <button class="btn btn-add" data-id="1" data-name="Sex on the Beach" data-price="8">+</button> <!--id unique pour chaque item-->
+                </div>
+            </div>
+
+
+            <div class="dish boissons">
+                <img src="media/food/boissons/spirtz.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Spritz</p>
+                    <p>7€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="2" data-name="Spritz" data-price="7">+</button>
+
+                </div>
+            </div>
+            <!-- div pour chaque plat -->
+
+            <div class="dish salades">
+                <img src="media/food/salades/provencale.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Salade provencale</p>
+                    <p>10€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="3" data-name="provencale" data-price="10">+</button>
+
+                </div>
+            </div>
+
+            <div class="dish salades">
+                <img src="media/food/salades/fraiche.png" class="dish-img">
+                <div class="dish-info">
+                    <p>Salade fraiche</p>
+                    <p>7€</p>
+                    <button class="btn btn-info">i</button> <p> </p>
+                    <button class="btn btn-add" data-id="4" data-name="fraiche" data-price="7">+</button>
+
+                </div>
+            </div>
+
+
+    </main>
+    
+    <footer id="habitude">
+        <p class="bold_text">Comme d'habitude ? </p>
+        <button class= "button2" id="habitudeButton" onclick="goToHabitude()">></button>
+    </footer>
+    <footer id="Total">
+        <p class="bold_text">Total : 0€</p>
+        <button class="button2" id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
+    </footer>
+
+    <script src="js/menu.js"></script>
+
+</body>
+</html>
