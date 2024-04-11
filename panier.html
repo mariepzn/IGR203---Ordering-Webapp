@@ -11,22 +11,30 @@
     <div id="cart-items" class="cart-items"></div>
     
     <div class="form_group">
-        <p>Code Promotionnel :  
-        <input type="text" id="username" name="username" required> </p>
-
-        <p>Points gagnés : 5</p>
-
-
-        <p>Numéro de table : <span id="tableNumberDisplay"></span></p>
-
+        <div class="flex-container">
+            <p class="flex-item-left">Code Promotionnel :</p>
+            <input type="text" id="username" name="username" required class="flex-item-right"> 
+        </div>
+    
+        <div class="flex-container">
+            <p class="flex-item-left">Points gagnés : </p>
+            <p class="flex-item-right">5</p>
+        </div>
+    
+        <div class="flex-container">
+            <p class="flex-item-left">Numéro de table :</p>
+            <span id="tableNumberDisplay" class="flex-item-right"></span>
+        </div>
     </div>
+    
 
 
 
     <p id="total" class="total"></p>
-    <button onclick="window.location.href='menu.html'">Retour au menu</button>
 
-    <button onclick="window.location.href='checkout.html'">Proceed to checkout</button>
+    <button class="menu-button" onclick="window.location.href='menu.html'">Menu</button>
+    <button class="checkout-button" onclick="window.location.href='checkout.html'">Proceed to checkout</button>
+    
 
     <script src="js/panier.js"></script>
 </body>

@@ -1,4 +1,7 @@
 .cart-items {
+    text-align: left;
+    font-size: 22px;
+    line-height:35px;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -37,4 +40,48 @@ h1{
 
 p{
     color: #009246;
+}
+
+
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+    background-color: #009246;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background-color: rgb(233, 212, 25);
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex; /* Active flexbox */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    max-width: 400px; /* Largeur maximale de 300px */
+    padding: 10px; /* Espacement interne pour aérer */
+    margin: 0 auto; /* Centre le bloc horizontalement */
+}
+
+
+.flex-item-left {
+    text-align: left; /* Alignement du texte à gauche */
+    flex: 1; /* Prend de l'espace disponible */
+}
+
+.flex-item-right {
+    text-align: right; /* Alignement du texte à droite */
+    flex: 1; /* Prend de l'espace disponible */
 }
