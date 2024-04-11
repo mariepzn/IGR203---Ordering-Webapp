@@ -86,18 +86,21 @@ document.getElementById('clear-cart').addEventListener('click', function() {
 //affichage du pop up
 
 document.addEventListener('DOMContentLoaded', function() {
-    //const hasVisited = localStorage.getItem('hasVisited');
+    const hasVisited = localStorage.getItem('hasVisited');
+    if (hasVisited=='false'){   
+
     const overlayPage = document.getElementById('overlayPage');
     const closeOverlayButton = document.getElementById('closeOverlay');
 
         overlayPage.style.display = 'flex';
         document.body.style.overflow = 'hidden'; // on peut pas scroll la page deriere
-        //localStorage.setItem('hasVisited', 'true');
+        localStorage.setItem('hasVisited', 'true');
 
     closeOverlayButton.addEventListener('click', function() {
         overlayPage.style.display = 'none';
         document.body.style.overflow = 'auto'; // autorise de nouveau le scroll
-    });
+
+    });  }
 });
 
 

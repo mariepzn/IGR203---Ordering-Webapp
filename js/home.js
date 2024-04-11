@@ -1,5 +1,6 @@
 function languageSelection() {
     window.location.href = "languageSelection.html";
+    localStorage.setItem('hasVisited', 'false'); //pour le pop up du menu
     }
 
 
