@@ -6,6 +6,7 @@ Le projet consiste à concevoir un menu interactif de restaurant. Nous avons cho
 
 
 ## Fonctionnalités :
+
 -Menu interactif
 
 -Personnalisation de salade
@@ -15,6 +16,8 @@ Le projet consiste à concevoir un menu interactif de restaurant. Nous avons cho
 -Habitude du client enregistrées 
 
 -Barre de recherche
+
+-Choix de la langue
 
 ![App Screenshot](./media/screen/screen.png)
 Screens des principales fonctionnalités 
@@ -30,6 +33,7 @@ Des dossiers css et js regroupent les fichiers en question associés aux pages w
 Un dossier json regroupe les dictionnaires utilisés pour la traduction du site
 Finalement un dossier media regroupe les images utilisées au travers des pages
 
+Commen nous n'avons pas implémenté de database (ce n'étais pas le but de l'exercice), certaines pages ont été dupliquées et hardcoded. Cette structure de code peu élégante pourra être améliorée lors de l'introduction d'une base de donées structurée dans des fichiers Json. Le code devrait être facilement adaptable. 
 
 ## Cloner le dépot:
 ```bash
