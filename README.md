@@ -7,8 +7,11 @@ Le projet consiste à concevoir un menu interactif de restaurant. Nous avons cho
 
 ## Fonctionnalités :
 -Menu interactif
+![App Screenshot](./media/screen/screen1.png)
 -Personnalisation de salade
+
 -Système de fidélité
+
 -Panier interactif
 
 ## Languages utilisés :
