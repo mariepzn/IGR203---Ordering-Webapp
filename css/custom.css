@@ -18,15 +18,15 @@ header #homeButton, header #cartButton, .btn {
 }
 
 .btn-info {
-    background-color: #3498db; /* Bleu */
+    background-color: #3498db;
 }
 
 .btn-add {
-    background-color: #2ecc71; /* Vert */
+    background-color: #2ecc71;
 }
 
 .btn-sub {
-    background-color: #2ecc71; /* Vert */
+    background-color: #2ecc71;
 }
 
 header #searchBar {
@@ -61,7 +61,7 @@ main .dish {
 }
 
 main .dish-img {
-    max-width: 100px; /* Ajustez selon la taille désirée */
+    max-width: 100px;
     margin-right: 10px;
     border-radius: 5px;
 }

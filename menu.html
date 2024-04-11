@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu du Restaurant</title>
+    <link rel="icon" href="media/icon.png">
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
@@ -76,6 +77,7 @@
     
     <footer>
         <p>Total : 0€</p>
+        <button id="panierButton" onclick="window.location.href='panier.html';">Valider</button>
     </footer>
 
     <script src="js/menu.js"></script>
@@ -89,9 +91,10 @@
 
 <div id="overlayPage" class="overlay-page" style="display: none;">
     <div class="overlay-content">
-        <h2>Vous avez 22 points de fidélité</h2>
-        <p>Souhaitez vous<br>les utiliser ?</p>
-        <button id="goToFidelite" onclick="goToFidelite()">Oui</button>
-        <button id="closeOverlay" onclick="close()">Une autre fois</button>
+        <h2>Vous avez 22 points de fidélité !</h2>
+        <p>Souhaitez vous les utiliser ?</p> <br>
+        <button class="button1" onclick="goToFidelite()">Oui</button> <p></p>
+        <button id="closeOverlay" class="button1" style="background-color: grey;" onclick="close()">Une autre fois</button>
+
     </div>
 </div>
