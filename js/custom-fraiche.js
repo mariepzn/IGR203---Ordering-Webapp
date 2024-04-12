@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // actualiser le prix total du produit
     function updateTotalPrice() {
-        
+        totalPrice = 7;
         document.querySelectorAll('.quantity').forEach(quantityElement => {
             const id = quantityElement.getAttribute('data-id');
             const price = parseFloat(document.querySelector('.btn-add[data-id="' + id + '"]').getAttribute('data-price'));
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addToCart() {
-    const platId = "3";
-    const platName = "provencale";
+    const platId = "4";
+    const platName = "fraiche";
     const platPrice = totalPrice.toString();
     
     addItemToCart(platId, platName, platPrice);

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // actualiser le prix total du produit
     function updateTotalPrice() {
-        
+        totalPrice = 10;
         document.querySelectorAll('.quantity').forEach(quantityElement => {
             const id = quantityElement.getAttribute('data-id');
             const price = parseFloat(document.querySelector('.btn-add[data-id="' + id + '"]').getAttribute('data-price'));
