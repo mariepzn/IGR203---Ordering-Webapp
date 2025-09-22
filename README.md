@@ -1,5 +1,5 @@
 # IGR203
-IGR203 User-Centered Design Project
+IGR203 User-Centered Design WebApp Project
 
 ## Description
 The project consists of designing an interactive restaurant menu. We chose to build a salad bar while shaping the menu to resemble a fast-food interface. Inspired by the growing trend of healthy and customizable quick dining, the project aims to deliver a friendly and intuitive experience. By combining the efficiency of a self-service ordering terminal, including a loyalty program, with the freshness and customization of a salad bar, the goal is to create a modern and satisfying culinary journey for customers.
